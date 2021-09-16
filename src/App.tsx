@@ -3,6 +3,7 @@ import Button from './Components/Button';
 import Header from './Components/Header';
 import Input from './Components/Input';
 import Message from './Components/Message';
+import UserAuth from './Components/StateComponents/UserAuth';
 import Status from './Components/Status'
 
 function App() {
@@ -36,8 +37,9 @@ function App() {
         details={personalDetails}
       />
 
-      <Button handleClick={(e) => console.log(e)} />
+      <Button handleClick={(e) => console.log(e)} label="Click" />
       <Input value="" onHandleChange={(e) => console.log(e)} />
+      <UserAuth />
 
     </div>
   );
